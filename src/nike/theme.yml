@@ -1,0 +1,35 @@
+name: Nike
+data:
+  productPages: /products/:productId
+  categoryPages: /category/:categoryId
+routing:
+  - routeId: 'nike-main-page-route'
+    url: /
+    pageId: nike-main-page
+  - routeId: 'nike-about-page-route'
+    url: /about
+    pageId: nike-about-page
+  - routeId: 'nike-contacts-page-route'
+    url: /contacts
+    pageId: nike-contacts-page
+  - routeId: 'nike-not-found-page-route'
+    url: /404
+    pageId: nike-not-found-page
+  - routeId: 'nike-product-page-route'
+    url: /products/:productId
+    pageId: nike-product-page
+  - routeId: 'nike-category-page-route'
+    url: /category/:categoryId
+    pageId: nike-category-page
+context:
+  '@logo':
+    service: company
+    method: getLogo
+    params: []
+pages:
+  - front
+  - product
+  - category
+  - about
+  - contacts
+  - not-found
