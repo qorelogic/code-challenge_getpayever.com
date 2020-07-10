@@ -346,7 +346,7 @@ stylesheets:
       fontSize: 16
       fontWeight: 500
       fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
-      color: '#000'
+      color: '#fff'
       margin: auto
     header-cart:
       width: 30
@@ -757,7 +757,7 @@ stylesheets:
       fontSize: 16
       fontWeight: 500
       fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
-      color: '#000'
+      color: '#fff'
       margin: auto 12 auto auto
       width: 38
       height: 38
@@ -1175,7 +1175,7 @@ stylesheets:
       fontSize: 16
       fontWeight: 500
       fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
-      color: '#000'
+      color: '#fff'
       margin: auto 12 auto auto
       width: 38
       height: 38
