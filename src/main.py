@@ -5,11 +5,20 @@ import pandas as p
 import json as js
 import os, sys
 
+import sys
+def defp(pt):
+    try:    sys.path.index(pt)
+    except: sys.path.append(pt)
+#defp('/ml.dev/bin')
+defp('/mllive/bin')
+
 #cmd = "ls pageyml"
 #res = os.system(cmd)
 #res = subprocess.check_output(cmd.split(' ')).strip()
 #print (res)
 #sys.exit()
+
+from qore import rolloutNestedDict
 
 def mkspc(x, maxsp, sep=' '):
 	return(''.join([sep]*(maxsp-len(x))))
@@ -56,6 +65,8 @@ def view(fname, ftype='json'):
 		try:                    df = p.DataFrame(o)
 		except ValueError as e: df = p.DataFrame(o, index=[0])
 		df = df.fillna('')
+		#try: df = rolloutNestedDict(df, nested_col='data')#, indx='indx')
+		#except: ''
 		with p.option_context('display.max_rows', 4000, 'display.max_columns', 4000, 'display.width', 1000000):
 			try:    print(df.loc[:, keys])
 			except: print(df)
