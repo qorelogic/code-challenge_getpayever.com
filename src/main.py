@@ -1,6 +1,6 @@
 
 #import subprocess
-#import yaml 
+import yaml
 import pandas as p
 import json as js
 import os, sys
@@ -14,11 +14,17 @@ import os, sys
 def mkspc(x, maxsp, sep=' '):
 	return(''.join([sep]*(maxsp-len(x))))
 
-def view(fname):
+def view(fname, ftype='json'):
+	
 	fp = open(fname, 'r') 
 	res = fp.read()
 	fp.close()
-	res = js.loads(res)
+	
+	#if ftype == 'json':
+	#	res = js.loads(res)
+	
+	if ftype == 'yaml':
+		res = yaml.safe_load(res)
 	
 	def mkhdr(res, nsep=60):
 		keys = ''
@@ -72,9 +78,10 @@ if __name__ == "__main__":
 
 	parser.add_argument("-v", '--view', help="viewjson", action="store_true")
 	parser.add_argument("-f",  '--file', help="filter index by")
+	parser.add_argument("-t",  '--type', help="json | yaml")
 
 	args = parser.parse_args()
 	
 	if args.view:
-		view(args.file)
+		view(args.file, args.type)
 
