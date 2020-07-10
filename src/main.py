@@ -81,6 +81,7 @@ if __name__ == "__main__":
 	parser = argparse.ArgumentParser()
 
 	parser.add_argument("-v", '--view', help="viewjson", action="store_true")
+	parser.add_argument("-sh", '--syntaxHighlight', help="syntax highlight", action="store_true")
 	parser.add_argument("-f",  '--file', help="filter index by")
 	parser.add_argument("-t",  '--type', help="json | yaml")
 
@@ -88,4 +89,15 @@ if __name__ == "__main__":
 	
 	if args.view:
 		view(args.file, args.type)
+
+	if args.syntaxHighlight:
+		# https://stackoverflow.com/questions/9105031/how-to-beautify-json-in-python
+		import sys
+		import json
+		from pygments import highlight, lexers, formatters
+
+		res = openfile(args.file)
+		formatted_json = json.dumps(json.loads(res))#, indent=4))
+		colorful_json = highlight(unicode(formatted_json, 'UTF-8'), lexers.JsonLexer(), formatters.TerminalFormatter())
+		print(colorful_json)
 
