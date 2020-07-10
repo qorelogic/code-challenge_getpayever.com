@@ -53,7 +53,8 @@ def view(fname, ftype='json'):
 		print('\n---- %s %s %s\n' % (title, str(type(o)), mkspc('', (nsep-len(title)), sep='-')))
 		#print(': %s %s' % (mkspc(o, 20), ))
 		keys = mkhdr(o)
-		df = p.DataFrame(o)
+		try:                    df = p.DataFrame(o)
+		except ValueError as e: df = p.DataFrame(o, index=[0])
 		df = df.fillna('')
 		with p.option_context('display.max_rows', 4000, 'display.max_columns', 4000, 'display.width', 1000000):
 			try:    print(df.loc[:, keys])
@@ -61,11 +62,36 @@ def view(fname, ftype='json'):
 	
 	mkall(res)
 	mkall(res['template'],             'template')
-	mkall(res['template']['children'], 'template children')
 	
 	o = res['template']['children']
+	mkall(o, 'template children')
 	for oi in range(len(o)):
-		mkall(o[oi]['children'],       'template children children %s' % oi)
+		o2 = o[oi]['children']
+		mkall(o2,       'template children %s children' % oi)		
+		for oi2 in range(len(o2)):
+			try:
+				o3 = o2[oi2]['data']
+			except KeyError as e:
+				print(e)
+				#continue
+				pass
+				
+			mkall(o3,     'template children %s children %s data'      % (oi, oi2))
+
+			for oi3 in range(len(o3)):
+				try:
+					mkall(o3[oi3]['src'],  'template children %s children %s data %s src'         % (oi, oi2, oi3))
+				except KeyError as e:
+					#print(e)
+					''
+
+			for oi3 in range(len(o3)):
+				try:
+					mkall(o3[oi3]['routes'],  'template children %s children %s data %s routes'   % (oi, oi2, oi3))
+				except KeyError as e:
+					#print(e)
+					''
+ 
 
 	#print('\n================================================================================================================================================================\n')
 	print('\n%s\n' % mkspc('', 160, sep='='))
