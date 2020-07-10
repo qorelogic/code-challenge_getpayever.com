@@ -52,7 +52,7 @@ template:
             - id: first-section-image-title
               type: text
               data:
-                text: Nike Air Max 2090
+                text: 
             - id: first-section-image-description
               type: text
               data:
@@ -71,15 +71,15 @@ template:
         - id: second-section-title
           type: text
           data:
-            text: YOU CAN'T STOP US.
+            text: 
         - id: second-section-description
           type: text
           data:
-            text: There's a reason we love comeback stories. We see ourselves in them — our resolve, our grit, our hope. Now, more than ever, we need these stories to remind us what we're capable of.
+            text: 
         - id: second-section-button
           type: button
           data:
-            text: Join Us
+            text: 
             link:
               type: internal
               routeId: /category/apple
