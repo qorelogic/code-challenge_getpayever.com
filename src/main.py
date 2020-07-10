@@ -32,11 +32,13 @@ def view(fname, ftype='json'):
 	
 	def mkhdr(res, nsep=60):
 		keys = ''
+		li = []
 		try:
 			keys = sorted(res.keys())
 			#print('\n--------------------------------------------------------------------------------\n')
 			#print(keys)
 			for i in keys:
+				if type(i) == type({}) or type(i) == type({}): li.append(i)
 				print('%s: %s %s' % (i, mkspc(i, nsep), type(res[i])))
 			#print('\n++++++++++++++++++++++++++++++++++++++++\n')
 			print('\n%s\n' % mkspc('', 40, sep='+'))
@@ -46,22 +48,26 @@ def view(fname, ftype='json'):
 				for i in range(len(res)): print('%s: %s %s' % (i, mkspc(i, 20), type(res[i])))
 			except:
 				''
-		return keys
+		return [keys, li]
 
 	def mkall(o, title='Global', nsep=150):
 		#print('\n--------------------------------------------------------------------------------\n')
 		print('\n---- %s %s %s\n' % (title, str(type(o)), mkspc('', (nsep-len(title)), sep='-')))
 		#print(': %s %s' % (mkspc(o, 20), ))
-		keys = mkhdr(o)
+		hkeys = mkhdr(o)
+		keys  = hkeys[0]
 		try:                    df = p.DataFrame(o)
 		except ValueError as e: df = p.DataFrame(o, index=[0])
 		df = df.fillna('')
 		with p.option_context('display.max_rows', 4000, 'display.max_columns', 4000, 'display.width', 1000000):
 			try:    print(df.loc[:, keys])
 			except: print(df)
+		return(hkeys)
 	
-	mkall(res)
-	mkall(res['template'],             'template')
+	hkeys = mkall(res)
+	for i in hkeys[1]:
+		mkall(res[i], i)
+	#mkall(res['template'],             'template')
 	
 	o = res['template']['children']
 	mkall(o, 'template children')
