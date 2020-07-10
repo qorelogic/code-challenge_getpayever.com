@@ -16,7 +16,7 @@ template:
         - id: header-logo
           type: logo
           data:
-            src: https://payeverproduction.blob.core.windows.net/builder/04819fde-6ae6-4777-8205-1e80310b44b5-nike-logo.png
+            src: https://www.apple.com/ac/globalnav/6/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg
         - id: header-menu
           type: menu
           data:
@@ -332,7 +332,7 @@ stylesheets:
     # Desktop Header
     # ----------------------------------
     header:
-      backgroundColor: '#fff'
+      backgroundColor: '#000'
       height: 44
       position: sticky
       top: 0
@@ -352,7 +352,7 @@ stylesheets:
       width: 30
       height: 72
       margin: 0 0 0 55
-      backgroundColor: '#fff'
+      backgroundColor: '#000'
       borderWidth: 3
       borderColor: '#000'
     # ----------------------------------
@@ -742,7 +742,7 @@ stylesheets:
     # Tablet Header
     # ----------------------------------
     header:
-      backgroundColor: '#fff'
+      backgroundColor: '#000'
       height: 44
       position: sticky
       top: 0
@@ -766,7 +766,7 @@ stylesheets:
       width: 30
       height: 72
       margin: 0 0 0 auto
-      backgroundColor: '#fff'
+      backgroundColor: '#000'
       borderWidth: 3
       borderColor: '#000'
       gridArea: 1 / 2 / 1 / 2
@@ -1160,7 +1160,7 @@ stylesheets:
     # Mobile Header
     # ----------------------------------
     header:
-      backgroundColor: '#fff'
+      backgroundColor: '#000'
       height: 44
       position: sticky
       top: 0
@@ -1184,7 +1184,7 @@ stylesheets:
       width: 30
       height: 72
       margin: 0 0 0 auto
-      backgroundColor: '#fff'
+      backgroundColor: '#000'
       borderWidth: 3
       borderColor: '#000'
       gridArea: 1 / 2 / 1 / 2
