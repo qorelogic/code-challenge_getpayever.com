@@ -243,7 +243,51 @@ template:
             - id: footer-column1-link-title
               type: text
               data:
-                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Shop</span>
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Shop and Learn</span>
+            - id: footer-column1-link1
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Mac</span>
+            - id: footer-column1-link2
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">iPad</span>
+            - id: footer-column1-link3
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">iPhone</span>
+            - id: footer-column1-link4
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Watch</span>
+            - id: footer-column1-link5
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">TV</span>
+            - id: footer-column1-link6
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Music</span>
+            - id: footer-column1-link7
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">AirPods</span>
+            - id: footer-column1-link8
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">HomePod</span>
+            - id: footer-column1-link9
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">iPad touch</span>
+            - id: footer-column1-link10
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Accessories</span>
+            - id: footer-column1-link11
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Gift-Cards</span>
             - id: footer-column1-link1
               type: text
               data:
