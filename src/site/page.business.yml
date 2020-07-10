@@ -46,6 +46,24 @@ template:
     - id: first-section
       type: section
       children:
+        - id: first-section-title
+          type: text
+          data:
+            text: The most powerful products for business are the ones people already love to use.
+        - id: first-section-description
+          type: text
+          data:
+            text: Apple products help employees work more simply and productively, solve problems creatively, and collaborate with a shared purpose. And they are all designed to work together beautifully. When people have the power to work the way they want, with the tools they love, they can do their best work. 
+        - id: first-section-button
+          type: button
+          data:
+            text: Join Us
+            link:
+              type: internal
+              routeId: /category/apple
+    - id: second-section
+      type: section
+      children:
         - id: first-section-image
           type: block
           children:
