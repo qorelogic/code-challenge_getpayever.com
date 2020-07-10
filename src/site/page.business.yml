@@ -411,7 +411,7 @@ stylesheets:
     first-section-image:
       display: grid
       gridTemplateRows: 3fr
-      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/30620168-61f3-4961-8252-224ba3cb6633-nike-dream.jpg'
+      backgroundImage: 'https://www.apple.com/v/business/b/images/business/overview/hero/hero__cqqnryp7as9y_medium.jpg'
       backgroundSize: cover
       backgroundPosition: center
       height: 700
@@ -826,7 +826,7 @@ stylesheets:
     first-section-image:
       display: grid
       gridTemplateRows: 3fr
-      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/30620168-61f3-4961-8252-224ba3cb6633-nike-dream.jpg'
+      backgroundImage: 'https://www.apple.com/v/business/b/images/business/overview/hero/hero__cqqnryp7as9y_medium.jpg'
       backgroundSize: cover
       backgroundPosition: center
       height: 500
@@ -1244,7 +1244,7 @@ stylesheets:
     first-section-image:
       display: grid
       gridTemplateRows: 3fr
-      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/30620168-61f3-4961-8252-224ba3cb6633-nike-dream.jpg'
+      backgroundImage: 'https://www.apple.com/v/business/b/images/business/overview/hero/hero__cqqnryp7as9y_medium.jpg'
       backgroundSize: cover
       backgroundPosition: center
       height: 500
