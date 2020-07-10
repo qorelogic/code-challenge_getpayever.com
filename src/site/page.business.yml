@@ -17,6 +17,11 @@ template:
           type: logo
           data:
             src: https://www.apple.com/ac/globalnav/6/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg
+        - id: header-text1
+          type: text
+          data:
+            text: Mac
+            src: https://www.apple.com/ac/globalnav/6/en_US/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_links_mac_image__fv4ktb435mum_large.svg
         - id: header-menu
           type: menu
           data:
