@@ -14,11 +14,15 @@ import os, sys
 def mkspc(x, maxsp, sep=' '):
 	return(''.join([sep]*(maxsp-len(x))))
 
-def view(fname, ftype='json'):
-	
+def openfile(fname):
 	fp = open(fname, 'r') 
 	res = fp.read()
 	fp.close()
+	return(res)
+
+def view(fname, ftype='json'):
+	
+	res = openfile(fname)
 	
 	#if ftype == 'json':
 	#	res = js.loads(res)
