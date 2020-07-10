@@ -1,0 +1,1574 @@
+id: nike-main-page
+name: Main Page
+variant: front
+type: replica
+master: ~
+data: {}
+template:
+  id: nike-main-page
+  type: document
+  children:
+    - id: header
+      type: section
+      meta:
+        deletable: false
+      children:
+        - id: header-logo
+          type: logo
+          data:
+            src: https://payeverproduction.blob.core.windows.net/builder/04819fde-6ae6-4777-8205-1e80310b44b5-nike-logo.png
+        - id: header-menu
+          type: menu
+          data:
+            routes:
+              - title: NEW RELEASES
+                routeId: /category/apple
+              - title: MEN
+                routeId: /category/apple
+              - title: WOMEN
+                routeId: /category/apple
+              - title: KIDS
+                routeId: /category/apple
+              - title: CUSTOMIZE
+                routeId: /category/apple
+              - title: COLLECTIONS
+                routeId: /category/apple
+              - title: SALE
+                routeId: /category/apple
+        - id: header-cart
+          type: shop-cart
+
+    - id: first-section
+      type: section
+      children:
+        - id: first-section-image
+          type: block
+          children:
+            - id: first-section-image-title
+              type: text
+              data:
+                text: Nike Air Max 2090
+            - id: first-section-image-description
+              type: text
+              data:
+                text: SPACE TO
+            - id: first-section-image-button
+              type: button
+              data:
+                link:
+                  type: internal
+                  routeId: /category/apple
+                text: Shop
+
+    - id: second-section
+      type: section
+      children:
+        - id: second-section-title
+          type: text
+          data:
+            text: YOU CAN'T STOP US.
+        - id: second-section-description
+          type: text
+          data:
+            text: There's a reason we love comeback stories. We see ourselves in them — our resolve, our grit, our hope. Now, more than ever, we need these stories to remind us what we're capable of.
+        - id: second-section-button
+          type: button
+          data:
+            text: Join Us
+            link:
+              type: internal
+              routeId: /category/apple
+
+    - id: third-section
+      type: section
+      children:
+        - id: third-section-title
+          type: text
+          data:
+            text: Video
+        - id: third-section-video
+          type: video
+          data:
+            source: https://payevertesting.blob.core.windows.net/builder-video/818dcc5f-13e3-45b1-8bf9-066bee0c5f6f-media
+            preview: https://payevertesting.blob.core.windows.net/builder-video/818dcc5f-13e3-45b1-8bf9-066bee0c5f6f-media_preview
+            autoplay: true
+            loop: true
+
+    - id: fourth-section
+      type: section
+      children:
+        - id: fourth-section-title
+          type: text
+          data:
+            text: Trending
+        - id: fourth-section-content
+          type: block
+          children:
+            - id: fourth-section-content-block1
+              type: block
+              children:
+                - id: fourth-section-content-block1-title
+                  type: text
+                  data:
+                    text: Workout Must-Haves
+                - id: fourth-section-content-block1-button
+                  type: button
+                  data:
+                    text: Shop
+                    link:
+                      type: internal
+                      routeId: /category/apple
+            - id: fourth-section-content-block2
+              type: block
+              children:
+                - id: fourth-section-content-block2-title
+                  type: text
+                  data:
+                    text: Clean, Fresh Basics
+                - id: fourth-section-content-block2-button
+                  type: button
+                  data:
+                    text: Shop
+
+    - id: fifth-section
+      type: section
+      children:
+        - id: fifth-section-title
+          type: text
+          data:
+            text: Featured
+        - id: fifth-section-content
+          type: block
+          children:
+            - id: fifth-section-content-title
+              type: text
+              data:
+                text: Nike React Miller
+            - id: fifth-section-content-description
+              type: text
+              data:
+                text: COMFORT
+            - id: fifth-section-content-button
+              type: button
+              data:
+                text: Shop
+                link:
+                  type: internal
+                  routeId: /category/apple
+
+    - id: sixth-section
+      type: section
+      children:
+        - id: sixth-section-title
+          type: text
+          data:
+            text: Don't Miss
+        - id: sixth-section-content
+          type: block
+          children:
+            - id: sixth-section-content-block1
+              type: block
+              children:
+                - id: sixth-section-content-block1-title
+                  type: text
+                  data:
+                    text: SuperRep Cycle
+                - id: sixth-section-content-block1-button
+                  type: button
+                  data:
+                    text: Shop
+                    link:
+                      type: internal
+                      routeId: /category/apple
+            - id: sixth-section-content-block2
+              type: block
+              children:
+                - id: sixth-section-content-block2-title
+                  type: text
+                  data:
+                    text: Designed for Comfort
+                - id: sixth-section-content-block2-button
+                  type: button
+                  data:
+                    text: Shop
+
+    - id: seventh-section
+      type: section
+      children:
+        - id: seventh-section-title
+          type: text
+          data:
+            text: More Nike
+        - id: seventh-section-content
+          type: block
+          children:
+            - id: seventh-section-content-block1
+              type: block
+              children:
+                - id: seventh-section-content-block1-button
+                  type: button
+                  data:
+                    text: Men's
+                    link:
+                      type: internal
+                      routeId: /category/apple
+            - id: seventh-section-content-block2
+              type: block
+              children:
+                - id: seventh-section-content-block2-button
+                  type: button
+                  data:
+                    text: Women's
+            - id: seventh-section-content-block3
+              type: block
+              children:
+                - id: seventh-section-content-block3-button
+                  type: button
+                  data:
+                    text: Kids'
+
+    - id: footer
+      type: section
+      meta:
+        deletable: false
+      children:
+        - id: footer-column1
+          type: block
+          children:
+            - id: footer-column1-link-title
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Shop</span>
+            - id: footer-column1-link1
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Shoes</span>
+            - id: footer-column1-link2
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Clothing</span>
+            - id: footer-column1-link3
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Kid's</span>
+            - id: footer-column1-link4
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Featured</span>
+        - id: footer-column2
+          type: block
+          children:
+            - id: footer-column2-link-title
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Services</span>
+            - id: footer-column2-link1
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">News</span>
+            - id: footer-column2-link2
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Careers</span>
+            - id: footer-column2-link3
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Investors</span>
+            - id: footer-column2-link4
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Sustainability</span>
+        - id: footer-column3
+          type: block
+          children:
+            - id: footer-column3-link-title
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Nike</span>
+            - id: footer-column3-link1
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Find a Store</span>
+            - id: footer-column3-link2
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Shop Online</span>
+            - id: footer-column3-link3
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Contact Us</span>
+            - id: footer-column3-link4
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Today at Nike</span>
+        - id: footer-column4
+          type: block
+          children:
+            - id: footer-column4-link-title
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">About Nike</span>
+            - id: footer-column4-link1
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Newsroom</span>
+            - id: footer-column4-link2
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Nile Leadership</span>
+            - id: footer-column4-link3
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Job Opportunities</span>
+            - id: footer-column4-link4
+              type: text
+              data:
+                text: <span peb-link-type="internal" peb-link-path="/products/93c3ed34-ea9c-4af1-b464-bc712ed95596">Events</span>
+
+stylesheets:
+  desktop:
+    nike-main-page: {}
+    # ----------------------------------
+    # Desktop Header
+    # ----------------------------------
+    header:
+      backgroundColor: '#fff'
+      height: 44
+      position: sticky
+      top: 0
+      zIndex: 1
+      display: grid
+      gridTemplateColumns: 100 1fr 100
+    header-logo:
+      width: 72
+      height: 72
+    header-menu:
+      fontSize: 16
+      fontWeight: 500
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      color: '#000'
+      margin: auto
+    header-cart:
+      width: 30
+      height: 72
+      margin: 0 0 0 55
+      backgroundColor: '#fff'
+      borderWidth: 3
+      borderColor: '#000'
+    # ----------------------------------
+    # Desktop First Section
+    # ----------------------------------
+    first-section: {}
+    first-section-image:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/30620168-61f3-4961-8252-224ba3cb6633-nike-dream.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+      height: 700
+      width: 100%
+    first-section-image-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 16
+      fontWeight: 400
+      color: '#fff'
+      textAlign: left
+      margin: auto 0 0 36
+    first-section-image-description:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 72
+      fontWeight: 900
+      textAlign: left
+      color: '#fff'
+      margin: 0 0 0 36
+    first-section-image-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 18
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 36 36 36
+    # ----------------------------------
+    # Desktop Second Section
+    # ----------------------------------
+    second-section:
+      display: grid
+      gridTemplateRows: 3fr
+    second-section-title:
+      fontSize: 72
+      color: '#111'
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontWeight: 900
+      margin: 24 auto
+    second-section-description:
+      fontSize: 20
+      color: '#111'
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontWeight: 300
+      margin: auto
+      width: 100%
+    second-section-button:
+      background: '#111'
+      borderRadius: 28
+      padding: 8 28
+      fontSize: 18
+      color: '#fff'
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 24 auto
+    # ----------------------------------
+    # Desktop Third Section
+    # ----------------------------------
+    third-section: {}
+    third-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 0 0 24 0
+    third-section-video:
+      width: 100%
+    # ----------------------------------
+    # Desktop Fourth Section
+    # ----------------------------------
+    fourth-section: {}
+    fourth-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 24 0
+    fourth-section-content:
+      display: grid
+      gridTemplateColumns: 1fr 1fr
+      height: 700
+    fourth-section-content-block1:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/4c02519e-48c9-4829-bc3d-59ea14683523-nike-just-do-it.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+      height: 100%
+      marginRight: 8
+    fourth-section-content-block1-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 20
+      fontWeight: 400
+      color: '#fff'
+      margin: auto 0 0 36
+    fourth-section-content-block1-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 18
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 36 36
+    fourth-section-content-block2:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e53ce272-08da-49fa-aa16-789e9094a635-nike-just-do-it_1.jpg'
+      height: 100%
+      backgroundSize: cover
+      backgroundPosition: center
+      marginLeft: 8
+    fourth-section-content-block2-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 20
+      fontWeight: 400
+      color: '#fff'
+      margin: auto 0 0 36
+    fourth-section-content-block2-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 18
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 36 36
+    # ----------------------------------
+    # Desktop Fifth Section
+    # ----------------------------------
+    fifth-section: {}
+    fifth-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 24 0
+    fifth-section-content:
+      display: grid
+      gridTemplateRows: 3fr
+      height: 700
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/59d42b44-c350-432d-9e5c-4ca609023ce0-nike-just-do-it_2.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+    fifth-section-content-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 16
+      fontWeight: 400
+      color: '#fff'
+      textAlign: left
+      margin: auto 0 0 36
+    fifth-section-content-description:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 72
+      fontWeight: 900
+      textAlign: left
+      color: '#fff'
+      margin: 0 0 0 36
+    fifth-section-content-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 18
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 36 36
+    # ----------------------------------
+    # Desktop Sixth Section
+    # ----------------------------------
+    sixth-section: {}
+    sixth-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 24 0
+    sixth-section-content:
+      display: grid
+      gridTemplateColumns: 1fr 1fr
+      height: 700
+    sixth-section-content-block1:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/a69e7afe-637e-41d3-8814-529517d54cd5-nike-just-do-it_3.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+      height: 100%
+      marginRight: 8
+    sixth-section-content-block1-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 20
+      fontWeight: 400
+      color: '#fff'
+      margin: auto 0 0 36
+    sixth-section-content-block1-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 18
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 36 36
+    sixth-section-content-block2:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/5aaf8730-3a2e-4a83-96da-d83702698c16-nike-just-do-it_4.jpg'
+      height: 100%
+      backgroundSize: cover
+      backgroundPosition: center
+      marginLeft: 8
+    sixth-section-content-block2-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 20
+      fontWeight: 400
+      color: '#fff'
+      margin: auto 0 0 36
+    sixth-section-content-block2-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 18
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 36 36
+    # ----------------------------------
+    # Desktop Seventh Section
+    # ----------------------------------
+    seventh-section: {}
+    seventh-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 24 0
+    seventh-section-content:
+      display: grid
+      gridTemplateColumns: 1fr 1fr 1fr
+      height: 700
+      margin: 0 0 36 0
+    seventh-section-content-block1:
+      display: grid
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/737dfa1e-25ae-4b98-9851-0c6e654adcb1-nike-just-do-it_5.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+      height: 100%
+      marginRight: 8
+    seventh-section-content-block1-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 18
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: auto 0 36 36
+    seventh-section-content-block2:
+      display: grid
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e4cf33d8-0885-40d8-bdfb-583e8c464b0b-nike-just-do-it_6.jpg'
+      height: 100%
+      backgroundSize: cover
+      backgroundPosition: center
+      margin: 0 8
+    seventh-section-content-block2-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 18
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: auto 0 36 36
+    seventh-section-content-block3:
+      display: grid
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/8feddbe8-c9ea-4ab5-a3ee-5e5ebd3bed53-nike-just-do-it_7.jpg'
+      height: 100%
+      backgroundSize: cover
+      backgroundPosition: center
+      marginLeft: 8
+    seventh-section-content-block3-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 18
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: auto 0 36 36
+    # ----------------------------------
+    # Desktop Footer
+    # ----------------------------------
+    footer:
+      height: 200
+      backgroundColor: '#121212'
+      display: grid
+      gridTemplateColumns: 256 256 256 256
+    footer-column1:
+      display: grid
+      gridTemplateRows: 50 30 30 30 30
+    footer-column1-link-title:
+      marginTop: 20
+      color: '#fff'
+      font-wight: 500
+      fontSize: 12
+    footer-column1-link1:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column1-link2:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column1-link3:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column1-link4:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column2:
+      display: grid
+      gridTemplateRows: 50 30 30 30 30
+    footer-column2-link-title:
+      marginTop: 20
+      color: '#fff'
+      font-wight: 500
+      fontSize: 12
+    footer-column2-link1:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column2-link2:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column2-link3:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column2-link4:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column3:
+      display: grid
+      gridTemplateRows: 50 30 30 30 30
+    footer-column3-link-title:
+      marginTop: 20
+      color: '#fff'
+      font-wight: 500
+      fontSize: 12
+    footer-column3-link1:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column3-link2:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column3-link3:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column3-link4:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column4:
+      display: grid
+      gridTemplateRows: 50 30 30 30 30
+    footer-column4-link-title:
+      marginTop: 20
+      color: '#fff'
+      font-wight: 500
+      fontSize: 12
+    footer-column4-link1:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column4-link2:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column4-link3:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column4-link4:
+      color: '#7e7e7e'
+      fontSize: 12
+
+  tablet:
+    nike-main-page: {}
+    # ----------------------------------
+    # Tablet Header
+    # ----------------------------------
+    header:
+      backgroundColor: '#fff'
+      height: 44
+      position: sticky
+      top: 0
+      zIndex: 1
+      display: grid
+      gridTemplateColumns: 100 1fr 100
+    header-logo:
+      width: 72
+      height: 72
+      gridArea: 1 / 1 / 1 / 1
+    header-menu:
+      fontSize: 16
+      fontWeight: 500
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      color: '#000'
+      margin: auto 12 auto auto
+      width: 38
+      height: 38
+      gridArea: 1 / 3 / 1 / 3
+    header-cart:
+      width: 30
+      height: 72
+      margin: 0 0 0 auto
+      backgroundColor: '#fff'
+      borderWidth: 3
+      borderColor: '#000'
+      gridArea: 1 / 2 / 1 / 2
+    # ----------------------------------
+    # Tablet First Section
+    # ----------------------------------
+    first-section: {}
+    first-section-image:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/30620168-61f3-4961-8252-224ba3cb6633-nike-dream.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+      height: 500
+      width: 100%
+    first-section-image-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 16
+      fontWeight: 400
+      color: '#fff'
+      textAlign: left
+      margin: auto 0 0 24
+    first-section-image-description:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 48
+      fontWeight: 900
+      textAlign: left
+      color: '#fff'
+      margin: 0 0 0 24
+    first-section-image-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 24 24 24
+    # ----------------------------------
+    # Tablet Second Section
+    # ----------------------------------
+    second-section:
+      display: grid
+      gridTemplateRows: 3fr
+    second-section-title:
+      fontSize: 48
+      color: '#111'
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontWeight: 900
+      margin: 24 auto
+    second-section-description:
+      fontSize: 18
+      color: '#111'
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontWeight: 300
+      margin: auto
+      width: 100%
+    second-section-button:
+      background: '#111'
+      borderRadius: 28
+      padding: 8 28
+      fontSize: 16
+      color: '#fff'
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 24 auto
+    # ----------------------------------
+    # Tablet Third Section
+    # ----------------------------------
+    third-section: {}
+    third-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 0 0 24 24
+    third-section-video:
+      width: 100%
+    # ----------------------------------
+    # Tablet Fourth Section
+    # ----------------------------------
+    fourth-section: {}
+    fourth-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 24 0 24 24
+    fourth-section-content:
+      display: grid
+      gridTemplateColumns: 1fr 1fr
+      height: 500
+    fourth-section-content-block1:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/4c02519e-48c9-4829-bc3d-59ea14683523-nike-just-do-it.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+      height: 100%
+      marginRight: 8
+    fourth-section-content-block1-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 20
+      fontWeight: 400
+      color: '#fff'
+      margin: auto 0 0 24
+    fourth-section-content-block1-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 24 24
+    fourth-section-content-block2:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e53ce272-08da-49fa-aa16-789e9094a635-nike-just-do-it_1.jpg'
+      height: 100%
+      backgroundSize: cover
+      backgroundPosition: center
+      marginLeft: 8
+    fourth-section-content-block2-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 20
+      fontWeight: 400
+      color: '#fff'
+      margin: auto 0 0 24
+    fourth-section-content-block2-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 24 24
+    # ----------------------------------
+    # Tablet Fifth Section
+    # ----------------------------------
+    fifth-section: {}
+    fifth-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 24 0 24 24
+    fifth-section-content:
+      display: grid
+      gridTemplateRows: 3fr
+      height: 500
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/59d42b44-c350-432d-9e5c-4ca609023ce0-nike-just-do-it_2.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+    fifth-section-content-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 16
+      fontWeight: 400
+      color: '#fff'
+      textAlign: left
+      margin: auto 0 0 24
+    fifth-section-content-description:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 48
+      fontWeight: 900
+      textAlign: left
+      color: '#fff'
+      margin: 0 0 0 24
+    fifth-section-content-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 24 24
+    # ----------------------------------
+    # Tablet Sixth Section
+    # ----------------------------------
+    sixth-section: {}
+    sixth-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 24 0 24 24
+    sixth-section-content:
+      display: grid
+      gridTemplateColumns: 1fr 1fr
+      height: 500
+    sixth-section-content-block1:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/a69e7afe-637e-41d3-8814-529517d54cd5-nike-just-do-it_3.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+      height: 100%
+      marginRight: 8
+    sixth-section-content-block1-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 20
+      fontWeight: 400
+      color: '#fff'
+      margin: auto 0 0 24
+    sixth-section-content-block1-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 24 24
+    sixth-section-content-block2:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/5aaf8730-3a2e-4a83-96da-d83702698c16-nike-just-do-it_4.jpg'
+      height: 100%
+      backgroundSize: cover
+      backgroundPosition: center
+      marginLeft: 8
+    sixth-section-content-block2-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 20
+      fontWeight: 400
+      color: '#fff'
+      margin: auto 0 0 24
+    sixth-section-content-block2-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 24 24
+    # ----------------------------------
+    # Tablet Seventh Section
+    # ----------------------------------
+    seventh-section: {}
+    seventh-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 24 0 24 24
+    seventh-section-content:
+      display: grid
+      gridTemplateColumns: 1fr 1fr 1fr
+      height: 500
+      margin: 0 0 24 0
+    seventh-section-content-block1:
+      display: grid
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/737dfa1e-25ae-4b98-9851-0c6e654adcb1-nike-just-do-it_5.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+      height: 100%
+      marginRight: 8
+    seventh-section-content-block1-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: auto 0 24 24
+    seventh-section-content-block2:
+      display: grid
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e4cf33d8-0885-40d8-bdfb-583e8c464b0b-nike-just-do-it_6.jpg'
+      height: 100%
+      backgroundSize: cover
+      backgroundPosition: center
+      margin: 0 8
+    seventh-section-content-block2-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: auto 0 24 24
+    seventh-section-content-block3:
+      display: grid
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/8feddbe8-c9ea-4ab5-a3ee-5e5ebd3bed53-nike-just-do-it_7.jpg'
+      height: 100%
+      backgroundSize: cover
+      backgroundPosition: center
+      marginLeft: 8
+    seventh-section-content-block3-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: auto 0 24 24
+    # ----------------------------------
+    # Tablet Footer
+    # ----------------------------------
+    footer:
+      height: 200
+      backgroundColor: '#121212'
+      display: grid
+      gridTemplateColumns: 1fr 1fr 1fr 1fr
+    footer-column1:
+      display: grid
+      gridTemplateRows: 50 30 30 30 30
+      margin: 0 0 0 24
+    footer-column1-link-title:
+      marginTop: 20
+      color: '#fff'
+      font-wight: 500
+      fontSize: 12
+    footer-column1-link1:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column1-link2:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column1-link3:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column1-link4:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column2:
+      display: grid
+      gridTemplateRows: 50 30 30 30 30
+    footer-column2-link-title:
+      marginTop: 20
+      color: '#fff'
+      font-wight: 500
+      fontSize: 12
+    footer-column2-link1:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column2-link2:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column2-link3:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column2-link4:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column3:
+      display: grid
+      gridTemplateRows: 50 30 30 30 30
+    footer-column3-link-title:
+      marginTop: 20
+      color: '#fff'
+      font-wight: 500
+      fontSize: 12
+    footer-column3-link1:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column3-link2:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column3-link3:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column3-link4:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column4:
+      display: grid
+      gridTemplateRows: 50 30 30 30 30
+    footer-column4-link-title:
+      marginTop: 20
+      color: '#fff'
+      font-wight: 500
+      fontSize: 12
+    footer-column4-link1:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column4-link2:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column4-link3:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column4-link4:
+      color: '#7e7e7e'
+      fontSize: 12
+
+
+
+  mobile:
+    nike-main-page: {}
+    # ----------------------------------
+    # Mobile Header
+    # ----------------------------------
+    header:
+      backgroundColor: '#fff'
+      height: 44
+      position: sticky
+      top: 0
+      zIndex: 1
+      display: grid
+      gridTemplateColumns: 100 1fr 100
+    header-logo:
+      width: 72
+      height: 72
+      gridArea: 1 / 1 / 1 / 1
+    header-menu:
+      fontSize: 16
+      fontWeight: 500
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      color: '#000'
+      margin: auto 12 auto auto
+      width: 38
+      height: 38
+      gridArea: 1 / 3 / 1 / 3
+    header-cart:
+      width: 30
+      height: 72
+      margin: 0 0 0 auto
+      backgroundColor: '#fff'
+      borderWidth: 3
+      borderColor: '#000'
+      gridArea: 1 / 2 / 1 / 2
+    # ----------------------------------
+    # Mobile First Section
+    # ----------------------------------
+    first-section: {}
+    first-section-image:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/30620168-61f3-4961-8252-224ba3cb6633-nike-dream.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+      height: 500
+      width: 100%
+    first-section-image-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 16
+      fontWeight: 400
+      color: '#fff'
+      textAlign: left
+      margin: auto 0 0 24
+    first-section-image-description:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 48
+      fontWeight: 900
+      textAlign: left
+      color: '#fff'
+      margin: 0 0 0 24
+    first-section-image-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 24 24 24
+    # ----------------------------------
+    # Mobile Second Section
+    # ----------------------------------
+    second-section:
+      display: grid
+      gridTemplateRows: 3fr
+    second-section-title:
+      fontSize: 48
+      color: '#111'
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontWeight: 900
+      margin: 24 auto
+      width: 100%
+    second-section-description:
+      fontSize: 18
+      color: '#111'
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontWeight: 300
+      margin: auto
+      width: 100%
+    second-section-button:
+      background: '#111'
+      borderRadius: 28
+      padding: 8 28
+      fontSize: 16
+      color: '#fff'
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 24 auto
+    # ----------------------------------
+    # Mobile Third Section
+    # ----------------------------------
+    third-section: {}
+    third-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 0 0 24 24
+    third-section-video:
+      width: 100%
+    # ----------------------------------
+    # Mobile Fourth Section
+    # ----------------------------------
+    fourth-section: {}
+    fourth-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 24 0 24 24
+    fourth-section-content:
+      display: grid
+      # gridTemplateColumns: 1fr 1fr
+      height: 1008
+    fourth-section-content-block1:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/4c02519e-48c9-4829-bc3d-59ea14683523-nike-just-do-it.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+      height: 500
+    fourth-section-content-block1-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 20
+      fontWeight: 400
+      color: '#fff'
+      margin: auto 0 0 24
+    fourth-section-content-block1-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 24 24
+    fourth-section-content-block2:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e53ce272-08da-49fa-aa16-789e9094a635-nike-just-do-it_1.jpg'
+      height: 500
+      backgroundSize: cover
+      backgroundPosition: center
+      marginTop: 8
+    fourth-section-content-block2-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 20
+      fontWeight: 400
+      color: '#fff'
+      margin: auto 0 0 24
+    fourth-section-content-block2-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 24 24
+    # ----------------------------------
+    # Mobile Fifth Section
+    # ----------------------------------
+    fifth-section: {}
+    fifth-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 24 0 24 24
+    fifth-section-content:
+      display: grid
+      gridTemplateRows: 3fr
+      height: 500
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/59d42b44-c350-432d-9e5c-4ca609023ce0-nike-just-do-it_2.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+    fifth-section-content-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 16
+      fontWeight: 400
+      color: '#fff'
+      textAlign: left
+      margin: auto 0 0 24
+    fifth-section-content-description:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 48
+      fontWeight: 900
+      textAlign: left
+      color: '#fff'
+      margin: 0 0 0 24
+    fifth-section-content-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 24 24
+    # ----------------------------------
+    # Mobile Sixth Section
+    # ----------------------------------
+    sixth-section: {}
+    sixth-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 24 0 24 24
+    sixth-section-content:
+      display: grid
+      height: 1008
+    sixth-section-content-block1:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/a69e7afe-637e-41d3-8814-529517d54cd5-nike-just-do-it_3.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+      height: 500
+      marginTop: 8
+    sixth-section-content-block1-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 20
+      fontWeight: 400
+      color: '#fff'
+      margin: auto 0 0 24
+    sixth-section-content-block1-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 24 24
+    sixth-section-content-block2:
+      display: grid
+      gridTemplateRows: 3fr
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/5aaf8730-3a2e-4a83-96da-d83702698c16-nike-just-do-it_4.jpg'
+      height: 500
+      backgroundSize: cover
+      backgroundPosition: center
+      marginTop: 8
+    sixth-section-content-block2-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 20
+      fontWeight: 400
+      color: '#fff'
+      margin: auto 0 0 24
+    sixth-section-content-block2-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: 18 24 24
+    # ----------------------------------
+    # Mobile Seventh Section
+    # ----------------------------------
+    seventh-section: {}
+    seventh-section-title:
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      fontSize: 24
+      fontWeight: 400
+      margin: 24 0 24 24
+    seventh-section-content:
+      display: grid
+      height: 1516
+      margin: 0 0 24 0
+    seventh-section-content-block1:
+      display: grid
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/737dfa1e-25ae-4b98-9851-0c6e654adcb1-nike-just-do-it_5.jpg'
+      backgroundSize: cover
+      backgroundPosition: center
+      height: 500
+    seventh-section-content-block1-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: auto 0 24 24
+    seventh-section-content-block2:
+      display: grid
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e4cf33d8-0885-40d8-bdfb-583e8c464b0b-nike-just-do-it_6.jpg'
+      height: 500
+      backgroundSize: cover
+      backgroundPosition: center
+      marginTop: 8
+    seventh-section-content-block2-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: auto 0 24 24
+    seventh-section-content-block3:
+      display: grid
+      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/8feddbe8-c9ea-4ab5-a3ee-5e5ebd3bed53-nike-just-do-it_7.jpg'
+      height: 500
+      backgroundSize: cover
+      backgroundPosition: center
+      marginTop: 8
+    seventh-section-content-block3-button:
+      background: '#fff'
+      color: '#111'
+      borderColor: '#fff'
+      borderRadius: 28
+      fontSize: 16
+      padding: 8 28
+      fontFamily: Helvetica Neue,Helvetica,Arial,sans-serif
+      margin: auto 0 24 24
+    # ----------------------------------
+    # Mobile Footer
+    # ----------------------------------
+    footer:
+      height: 200
+      backgroundColor: '#121212'
+      display: grid
+      gridTemplateColumns: 1fr
+    footer-column1:
+      display: grid
+      gridTemplateRows: 50 30 30 30 30
+      margin: 0 0 0 12
+    footer-column1-link-title:
+      marginTop: 20
+      color: '#fff'
+      font-wight: 500
+      fontSize: 12
+    footer-column1-link1:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column1-link2:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column1-link3:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column1-link4:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column2:
+      display: grid
+      gridTemplateRows: 50 30 30 30 30
+      margin: 0 0 0 12
+    footer-column2-link-title:
+      marginTop: 20
+      color: '#fff'
+      font-wight: 500
+      fontSize: 12
+    footer-column2-link1:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column2-link2:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column2-link3:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column2-link4:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column3:
+      display: grid
+      gridTemplateRows: 50 30 30 30 30
+      margin: 0 0 0 12
+    footer-column3-link-title:
+      marginTop: 20
+      color: '#fff'
+      font-wight: 500
+      fontSize: 12
+    footer-column3-link1:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column3-link2:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column3-link3:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column3-link4:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column4:
+      display: grid
+      gridTemplateRows: 50 30 30 30 30
+      margin: 0 0 0 12
+    footer-column4-link-title:
+      marginTop: 20
+      color: '#fff'
+      font-wight: 500
+      fontSize: 12
+    footer-column4-link1:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column4-link2:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column4-link3:
+      color: '#7e7e7e'
+      fontSize: 12
+    footer-column4-link4:
+      color: '#7e7e7e'
+      fontSize: 12
+
+
+context: {}
