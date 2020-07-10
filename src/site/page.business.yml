@@ -701,7 +701,7 @@ stylesheets:
     # ----------------------------------
     footer:
       height: 200
-      backgroundColor: '#121212'
+      backgroundColor: '#f5f5f7 !important'
       display: grid
       gridTemplateColumns: 256 256 256 256
     footer-column1:
@@ -1116,7 +1116,7 @@ stylesheets:
     # ----------------------------------
     footer:
       height: 200
-      backgroundColor: '#121212'
+      backgroundColor: '#f5f5f7 !important'
       display: grid
       gridTemplateColumns: 1fr 1fr 1fr 1fr
     footer-column1:
@@ -1531,7 +1531,7 @@ stylesheets:
     # ----------------------------------
     footer:
       height: 200
-      backgroundColor: '#121212'
+      backgroundColor: '#f5f5f7 !important'
       display: grid
       gridTemplateColumns: 1fr
     footer-column1:
