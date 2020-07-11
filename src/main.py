@@ -39,20 +39,33 @@ def view(fname, ftype='json'):
 
 			li = [x.split('-') for x in keys]
 			print(li)
-			vs = 'header first second third fourth fifth sixth seventh eighth ninth footer'.split(' ')
-			ks = [int(x) for x in '0 1 2 3 4 5 6 7 8 9 10'.split(' ')]
-			smap  = dict(zip(ks, vs))
-			rsmap = dict(zip(vs, ks))
-			print(smap)
-			print(rsmap)
 			dfli = p.DataFrame(li)
 			dfli['name'] = keys
-			#dfli[0] = [rsmap[x] for x in dfli[0]]
-			for x in dfli.index:
-				try: dfli.loc[x,0] = rsmap[dfli.loc[x,0]]
-				except: ''
-			dfli = dfli.sort_values(by=[0])
+
+			def literalSortMap(dfli, column=0, literals=''):
+				vs = literals.split(' ')
+				ks = list(range(0, len(vs)))
+				#ks = [int(x) for x in '0 1 2 3 4 5 6 7 8 9 10'.split(' ')]
+				smap  = dict(zip(ks, vs))
+				rsmap = dict(zip(vs, ks))
+				print(smap)
+				print(rsmap)
+
+				#dfli[0] = [rsmap[x] for x in dfli[0]]
+				for x in dfli.index:
+					try: dfli.loc[x,column] = rsmap[dfli.loc[x,column]]
+					except: ''
+
+				return(dfli)
 			
+			dfli = literalSortMap(dfli, column=0, literals='header first second third fourth fifth sixth seventh eighth ninth footer')
+			dfli = literalSortMap(dfli, column=1, literals='logo menu cart')
+			dfli = literalSortMap(dfli, column=1, literals='column1 column2 column3 column4 column5')
+
+			byl = [0,1] # list(range(0, 1))
+			try: dfli = dfli.sort_values(by=byl)
+			except Exception as e: print(e)
+
 			with p.option_context('display.max_rows', 4000, 'display.max_columns', 4000, 'display.width', 1000000):
 				print(dfli)
 				print()
