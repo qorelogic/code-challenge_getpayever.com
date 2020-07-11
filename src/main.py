@@ -30,7 +30,7 @@ def view(fname, ftype='json'):
 	if ftype == 'yaml':
 		res = yaml.safe_load(res)
 	
-	def mkhdr(res, nsep=60):
+	def mkhdr(res, nsep=60, verbose=True):
 		keys = ''
 		try:
 			keys = sorted(res.keys())
@@ -80,10 +80,11 @@ def view(fname, ftype='json'):
 			dfli['type'] = li
 			dfli = dfli.loc[:, 'name type'.split(' ')].set_index('name')
 			with p.option_context('display.max_rows', 4000, 'display.max_columns', 4000, 'display.width', 1000000):
-				print(dfli)
-				print('')
-			#print('\n++++++++++++++++++++++++++++++++++++++++\n')
-			print('\n%s\n' % mkspc('', 40, sep='+'))
+				if verbose:
+					print(dfli)
+					print('')
+					#print('\n++++++++++++++++++++++++++++++++++++++++\n')
+					print('\n%s\n' % mkspc('', 40, sep='+'))
 		except AttributeError as e:
 			#print(e)
 			try:
@@ -92,11 +93,11 @@ def view(fname, ftype='json'):
 				''
 		return keys
 
-	def mkall(o, title='Global', nsep=150, transpose=False):
+	def mkall(o, title='Global', nsep=150, transpose=False, header=True):
 		#print('\n--------------------------------------------------------------------------------\n')
 		print('\n---- %s %s %s\n' % (title, str(type(o)), mkspc('', (nsep-len(title)), sep='-')))
 		#print(': %s %s' % (mkspc(o, 20), ))
-		keys = mkhdr(o)
+		keys = mkhdr(o, verbose=header)
 		try:                    df = p.DataFrame(o)
 		except ValueError as e: df = p.DataFrame(o, index=[0])
 		df = df.fillna('')
@@ -143,10 +144,11 @@ def view(fname, ftype='json'):
 	print('\n%s\n' % mkspc('', 160, sep='='))
 	
 	transpose = True
-	mkall(res['stylesheets'],            'stylesheets',         nsep=150)
-	mkall(res['stylesheets']['mobile'],  'stylesheets mobile',  transpose=transpose)
-	mkall(res['stylesheets']['tablet'],  'stylesheets tablet',  transpose=transpose)
-	mkall(res['stylesheets']['desktop'], 'stylesheets desktop', transpose=transpose)
+	pheader = False
+	#mkall(res['stylesheets'],            'stylesheets',         nsep=150)
+	mkall(res['stylesheets']['mobile'],  'stylesheets mobile',  transpose=transpose, header=pheader)
+	mkall(res['stylesheets']['tablet'],  'stylesheets tablet',  transpose=transpose, header=pheader)
+	mkall(res['stylesheets']['desktop'], 'stylesheets desktop', transpose=transpose, header=pheader)
 
 if __name__ == "__main__":
 	import argparse
