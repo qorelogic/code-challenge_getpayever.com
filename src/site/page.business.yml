@@ -224,13 +224,13 @@ template:
                   type: button
                   data:
                     text: Women's
-            - id: seventh-section-content-block3
-              type: block
-              children:
-                - id: seventh-section-content-block3-button
-                  type: button
-                  data:
-                    text: Kids'
+            #- id: seventh-section-content-block3
+            #  type: block
+            #  children:
+            #    - id: seventh-section-content-block3-button
+            #      type: button
+            #      data:
+            #        text: Kids'
 
     - id: footer
       type: section
@@ -645,7 +645,7 @@ stylesheets:
       margin: 24 0
     seventh-section-content:
       display: grid
-      gridTemplateColumns: 1fr 1fr 1fr
+      gridTemplateColumns: 1fr 1fr
       height: 700
       margin: 0 0 36 0
     seventh-section-content-block1:
@@ -1060,7 +1060,7 @@ stylesheets:
       margin: 24 0 24 24
     seventh-section-content:
       display: grid
-      gridTemplateColumns: 1fr 1fr 1fr
+      gridTemplateColumns: 1fr 1fr
       height: 500
       margin: 0 0 24 0
     seventh-section-content-block1:
