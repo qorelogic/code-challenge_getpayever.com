@@ -549,7 +549,6 @@ stylesheets:
       display: grid
       gridTemplateRows: 3fr
       height: 700
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/59d42b44-c350-432d-9e5c-4ca609023ce0-nike-just-do-it_2.jpg'
       backgroundImage: 'https://www.apple.com/v/business/b/images/business/overview/partners/partners__ftsgwbh6crmi_large.jpg'
       backgroundSize: cover
       backgroundPosition: center
@@ -592,7 +591,6 @@ stylesheets:
     sixth-section-content-block1:
       display: grid
       gridTemplateRows: 3fr
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/a69e7afe-637e-41d3-8814-529517d54cd5-nike-just-do-it_3.jpg'
       backgroundImage: 'https://www.apple.com/v/business/b/images/business/overview/successstories/success_stories__im0eie28jlui_large.jpg'
       backgroundSize: cover
       backgroundPosition: center
@@ -616,7 +614,6 @@ stylesheets:
     sixth-section-content-block2:
       display: grid
       gridTemplateRows: 3fr
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/5aaf8730-3a2e-4a83-96da-d83702698c16-nike-just-do-it_4.jpg'
       backgroundImage: ''
       height: 100%
       backgroundSize: cover
@@ -653,7 +650,6 @@ stylesheets:
       margin: 0 0 36 0
     seventh-section-content-block1:
       display: grid
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/737dfa1e-25ae-4b98-9851-0c6e654adcb1-nike-just-do-it_5.jpg'
       backgroundImage: ''
       backgroundSize: cover
       backgroundPosition: center
@@ -670,7 +666,6 @@ stylesheets:
       margin: auto 0 36 36
     seventh-section-content-block2:
       display: grid
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e4cf33d8-0885-40d8-bdfb-583e8c464b0b-nike-just-do-it_6.jpg'
       backgroundImage: ''
       height: 100%
       backgroundSize: cover
@@ -687,7 +682,6 @@ stylesheets:
       margin: auto 0 36 36
     seventh-section-content-block3:
       display: grid
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/8feddbe8-c9ea-4ab5-a3ee-5e5ebd3bed53-nike-just-do-it_7.jpg'
       backgroundImage: ''
       height: 100%
       backgroundSize: cover
@@ -970,7 +964,6 @@ stylesheets:
       display: grid
       gridTemplateRows: 3fr
       height: 500
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/59d42b44-c350-432d-9e5c-4ca609023ce0-nike-just-do-it_2.jpg'
       backgroundImage: 'https://www.apple.com/v/business/b/images/business/overview/partners/partners__ftsgwbh6crmi_large.jpg'
       backgroundSize: cover
       backgroundPosition: center
@@ -1013,7 +1006,6 @@ stylesheets:
     sixth-section-content-block1:
       display: grid
       gridTemplateRows: 3fr
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/a69e7afe-637e-41d3-8814-529517d54cd5-nike-just-do-it_3.jpg'
       backgroundImage: 'https://www.apple.com/v/business/b/images/business/overview/successstories/success_stories__im0eie28jlui_large.jpg'
       backgroundSize: cover
       backgroundPosition: center
@@ -1037,7 +1029,6 @@ stylesheets:
     sixth-section-content-block2:
       display: grid
       gridTemplateRows: 3fr
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/5aaf8730-3a2e-4a83-96da-d83702698c16-nike-just-do-it_4.jpg'
       backgroundImage: ''
       height: 100%
       backgroundSize: cover
@@ -1074,7 +1065,7 @@ stylesheets:
       margin: 0 0 24 0
     seventh-section-content-block1:
       display: grid
-      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/737dfa1e-25ae-4b98-9851-0c6e654adcb1-nike-just-do-it_5.jpg'
+      backgroundImage: ''
       backgroundSize: cover
       backgroundPosition: center
       height: 100%
@@ -1090,7 +1081,7 @@ stylesheets:
       margin: auto 0 24 24
     seventh-section-content-block2:
       display: grid
-      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e4cf33d8-0885-40d8-bdfb-583e8c464b0b-nike-just-do-it_6.jpg'
+      backgroundImage: ''
       height: 100%
       backgroundSize: cover
       backgroundPosition: center
@@ -1106,7 +1097,7 @@ stylesheets:
       margin: auto 0 24 24
     seventh-section-content-block3:
       display: grid
-      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/8feddbe8-c9ea-4ab5-a3ee-5e5ebd3bed53-nike-just-do-it_7.jpg'
+      backgroundImage: ''
       height: 100%
       backgroundSize: cover
       backgroundPosition: center
@@ -1336,7 +1327,6 @@ stylesheets:
     fourth-section-content-block1:
       display: grid
       gridTemplateRows: 3fr
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/4c02519e-48c9-4829-bc3d-59ea14683523-nike-just-do-it.jpg'
       backgroundImage: ''
       backgroundSize: cover
       backgroundPosition: center
@@ -1359,7 +1349,6 @@ stylesheets:
     fourth-section-content-block2:
       display: grid
       gridTemplateRows: 3fr
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e53ce272-08da-49fa-aa16-789e9094a635-nike-just-do-it_1.jpg'
       backgroundImage: 'https://www.apple.com/v/business/b/images/business/overview/it/simple_scale__bs13ernkb3ea_large.jpg'
       height: 500
       backgroundSize: cover
@@ -1393,7 +1382,6 @@ stylesheets:
       display: grid
       gridTemplateRows: 3fr
       height: 500
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/59d42b44-c350-432d-9e5c-4ca609023ce0-nike-just-do-it_2.jpg'
       backgroundImage: 'https://www.apple.com/v/business/b/images/business/overview/partners/partners__ftsgwbh6crmi_large.jpg'
       backgroundSize: cover
       backgroundPosition: center
@@ -1435,7 +1423,6 @@ stylesheets:
     sixth-section-content-block1:
       display: grid
       gridTemplateRows: 3fr
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/a69e7afe-637e-41d3-8814-529517d54cd5-nike-just-do-it_3.jpg'
       backgroundImage: 'https://www.apple.com/v/business/b/images/business/overview/successstories/success_stories__im0eie28jlui_large.jpg'
       backgroundSize: cover
       backgroundPosition: center
@@ -1459,7 +1446,6 @@ stylesheets:
     sixth-section-content-block2:
       display: grid
       gridTemplateRows: 3fr
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/5aaf8730-3a2e-4a83-96da-d83702698c16-nike-just-do-it_4.jpg'
       backgroundImage: ''
       height: 500
       backgroundSize: cover
@@ -1495,7 +1481,6 @@ stylesheets:
       margin: 0 0 24 0
     seventh-section-content-block1:
       display: grid
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/737dfa1e-25ae-4b98-9851-0c6e654adcb1-nike-just-do-it_5.jpg'
       backgroundImage: ''
       backgroundSize: cover
       backgroundPosition: center
@@ -1511,7 +1496,6 @@ stylesheets:
       margin: auto 0 24 24
     seventh-section-content-block2:
       display: grid
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e4cf33d8-0885-40d8-bdfb-583e8c464b0b-nike-just-do-it_6.jpg'
       backgroundImage: ''
       height: 500
       backgroundSize: cover
@@ -1528,7 +1512,6 @@ stylesheets:
       margin: auto 0 24 24
     seventh-section-content-block3:
       display: grid
-      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/8feddbe8-c9ea-4ab5-a3ee-5e5ebd3bed53-nike-just-do-it_7.jpg'
       backgroundImage: ''
       height: 500
       backgroundSize: cover
