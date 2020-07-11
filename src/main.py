@@ -36,6 +36,33 @@ def view(fname, ftype='json'):
 			keys = sorted(res.keys())
 			#print('\n--------------------------------------------------------------------------------\n')
 			#print(keys)
+
+			li = [x.split('-') for x in keys]
+			print(li)
+			vs = 'header first second third fourth fifth sixth seventh eighth ninth footer'.split(' ')
+			ks = [int(x) for x in '0 1 2 3 4 5 6 7 8 9 10'.split(' ')]
+			smap  = dict(zip(ks, vs))
+			rsmap = dict(zip(vs, ks))
+			print(smap)
+			print(rsmap)
+			dfli = p.DataFrame(li)
+			dfli['name'] = keys
+			#dfli[0] = [rsmap[x] for x in dfli[0]]
+			for x in dfli.index:
+				try: dfli.loc[x,0] = rsmap[dfli.loc[x,0]]
+				except: ''
+			dfli = dfli.sort_values(by=[0])
+			
+			with p.option_context('display.max_rows', 4000, 'display.max_columns', 4000, 'display.width', 1000000):
+				print(dfli)
+				print()
+
+			print('        lenkeys: %s'%len(keys))
+			try:
+				keys = list(dfli['name'])
+				print('lenkeys[sorted]: %s'%len(keys))
+			except: ''
+
 			for i in keys:
 				print('%s: %s %s' % (i, mkspc(i, nsep), type(res[i])))
 			#print('\n++++++++++++++++++++++++++++++++++++++++\n')
@@ -48,7 +75,7 @@ def view(fname, ftype='json'):
 				''
 		return keys
 
-	def mkall(o, title='Global', nsep=150):
+	def mkall(o, title='Global', nsep=150, transpose=False):
 		#print('\n--------------------------------------------------------------------------------\n')
 		print('\n---- %s %s %s\n' % (title, str(type(o)), mkspc('', (nsep-len(title)), sep='-')))
 		#print(': %s %s' % (mkspc(o, 20), ))
@@ -56,9 +83,11 @@ def view(fname, ftype='json'):
 		try:                    df = p.DataFrame(o)
 		except ValueError as e: df = p.DataFrame(o, index=[0])
 		df = df.fillna('')
+		try:    df = df.loc[:, keys]
+		except: ''
+		if transpose: df = df.transpose()
 		with p.option_context('display.max_rows', 4000, 'display.max_columns', 4000, 'display.width', 1000000):
-			try:    print(df.loc[:, keys])
-			except: print(df)
+			print(df)
 	
 	mkall(res)
 	mkall(res['template'],             'template')
@@ -96,10 +125,11 @@ def view(fname, ftype='json'):
 	#print('\n================================================================================================================================================================\n')
 	print('\n%s\n' % mkspc('', 160, sep='='))
 	
+	transpose = True
 	mkall(res['stylesheets'],            'stylesheets',         nsep=150)
-	mkall(res['stylesheets']['mobile'],  'stylesheets mobile')
-	mkall(res['stylesheets']['tablet'],  'stylesheets tablet')
-	mkall(res['stylesheets']['desktop'], 'stylesheets desktop')
+	mkall(res['stylesheets']['mobile'],  'stylesheets mobile',  transpose=transpose)
+	mkall(res['stylesheets']['tablet'],  'stylesheets tablet',  transpose=transpose)
+	mkall(res['stylesheets']['desktop'], 'stylesheets desktop', transpose=transpose)
 
 if __name__ == "__main__":
 	import argparse
