@@ -38,7 +38,7 @@ def view(fname, ftype='json'):
 			#print(keys)
 
 			li = [x.split('-') for x in keys]
-			print(li)
+			#print(li)
 			dfli = p.DataFrame(li)
 			dfli['name'] = keys
 
@@ -48,36 +48,40 @@ def view(fname, ftype='json'):
 				#ks = [int(x) for x in '0 1 2 3 4 5 6 7 8 9 10'.split(' ')]
 				smap  = dict(zip(ks, vs))
 				rsmap = dict(zip(vs, ks))
-				print(smap)
-				print(rsmap)
-
+				#print(smap)
+				#print(rsmap)
 				#dfli[0] = [rsmap[x] for x in dfli[0]]
 				for x in dfli.index:
 					try: dfli.loc[x,column] = rsmap[dfli.loc[x,column]]
-					except: ''
+					except Exception as e: '' #print(e)
 
 				return(dfli)
 			
+			dfli = literalSortMap(dfli, column=0, literals='desktop tablet mobile')
+			dfli = literalSortMap(dfli, column=0, literals='id name variant type master data template stylesheets context')
 			dfli = literalSortMap(dfli, column=0, literals='header first second third fourth fifth sixth seventh eighth ninth footer')
 			dfli = literalSortMap(dfli, column=1, literals='logo menu cart')
 			dfli = literalSortMap(dfli, column=1, literals='column1 column2 column3 column4 column5')
 
 			byl = [0,1] # list(range(0, 1))
 			try: dfli = dfli.sort_values(by=byl)
+			except Exception as e: '' #print(e)
+
+			try:
+				#print('        lenkeys: %s'%len(keys))
+				keys = list(dfli['name'])
+				#print('lenkeys[sorted]: %s'%len(keys))
 			except Exception as e: print(e)
 
+			li = []
+			for i in keys:
+				li.append(type(res[i]))
+				#print('%s: %s %s' % (i, mkspc(i, nsep), type(res[i])))
+			dfli['type'] = li
+			dfli = dfli.loc[:, 'name type'.split(' ')].set_index('name')
 			with p.option_context('display.max_rows', 4000, 'display.max_columns', 4000, 'display.width', 1000000):
 				print(dfli)
-				print()
-
-			print('        lenkeys: %s'%len(keys))
-			try:
-				keys = list(dfli['name'])
-				print('lenkeys[sorted]: %s'%len(keys))
-			except: ''
-
-			for i in keys:
-				print('%s: %s %s' % (i, mkspc(i, nsep), type(res[i])))
+				print('')
 			#print('\n++++++++++++++++++++++++++++++++++++++++\n')
 			print('\n%s\n' % mkspc('', 40, sep='+'))
 		except AttributeError as e:
