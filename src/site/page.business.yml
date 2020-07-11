@@ -653,7 +653,8 @@ stylesheets:
       margin: 0 0 36 0
     seventh-section-content-block1:
       display: grid
-      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/737dfa1e-25ae-4b98-9851-0c6e654adcb1-nike-just-do-it_5.jpg'
+      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/737dfa1e-25ae-4b98-9851-0c6e654adcb1-nike-just-do-it_5.jpg'
+      backgroundImage: ''
       backgroundSize: cover
       backgroundPosition: center
       height: 100%
@@ -669,7 +670,8 @@ stylesheets:
       margin: auto 0 36 36
     seventh-section-content-block2:
       display: grid
-      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e4cf33d8-0885-40d8-bdfb-583e8c464b0b-nike-just-do-it_6.jpg'
+      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e4cf33d8-0885-40d8-bdfb-583e8c464b0b-nike-just-do-it_6.jpg'
+      backgroundImage: ''
       height: 100%
       backgroundSize: cover
       backgroundPosition: center
@@ -685,7 +687,8 @@ stylesheets:
       margin: auto 0 36 36
     seventh-section-content-block3:
       display: grid
-      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/8feddbe8-c9ea-4ab5-a3ee-5e5ebd3bed53-nike-just-do-it_7.jpg'
+      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/8feddbe8-c9ea-4ab5-a3ee-5e5ebd3bed53-nike-just-do-it_7.jpg'
+      backgroundImage: ''
       height: 100%
       backgroundSize: cover
       backgroundPosition: center
@@ -1492,7 +1495,8 @@ stylesheets:
       margin: 0 0 24 0
     seventh-section-content-block1:
       display: grid
-      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/737dfa1e-25ae-4b98-9851-0c6e654adcb1-nike-just-do-it_5.jpg'
+      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/737dfa1e-25ae-4b98-9851-0c6e654adcb1-nike-just-do-it_5.jpg'
+      backgroundImage: ''
       backgroundSize: cover
       backgroundPosition: center
       height: 500
@@ -1507,7 +1511,8 @@ stylesheets:
       margin: auto 0 24 24
     seventh-section-content-block2:
       display: grid
-      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e4cf33d8-0885-40d8-bdfb-583e8c464b0b-nike-just-do-it_6.jpg'
+      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/e4cf33d8-0885-40d8-bdfb-583e8c464b0b-nike-just-do-it_6.jpg'
+      backgroundImage: ''
       height: 500
       backgroundSize: cover
       backgroundPosition: center
@@ -1523,7 +1528,8 @@ stylesheets:
       margin: auto 0 24 24
     seventh-section-content-block3:
       display: grid
-      backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/8feddbe8-c9ea-4ab5-a3ee-5e5ebd3bed53-nike-just-do-it_7.jpg'
+      #backgroundImage: 'https://payeverproduction.blob.core.windows.net/builder/8feddbe8-c9ea-4ab5-a3ee-5e5ebd3bed53-nike-just-do-it_7.jpg'
+      backgroundImage: ''
       height: 500
       backgroundSize: cover
       backgroundPosition: center
